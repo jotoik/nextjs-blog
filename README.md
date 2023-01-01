@@ -1,1 +1,2 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is a simple blog built with Next.js
+Sample site : https://nextjs-blog-wine-eta-12.vercel.app/
