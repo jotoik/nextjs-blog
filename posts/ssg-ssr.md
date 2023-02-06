@@ -1,19 +1,19 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
-date: '2020-01-02'
+title: 'Miloin käyttää Staattista Generointia ja milloin Serveripuolen Renderöintiä'
+date: '2023-02-06'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Suosittelen käyttämään **Staattista generointia** (data kanssa ja ilman dataa) aina kun on mahdollista, koska sivusi rakennetaan kerran ja näyttää sen CDN:n kautta, mikä tekee siitä paljon nopeamman verrattuna siihen, että serveri renderöi sivun jokaisella pyynnöllä.
 
-You can use Static Generation for many types of pages, including:
+Voit käyttää Staattista generointia monen tyyppisiin sivuihin, kuten:
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+- Markkinointi sivut
+- Blogi postaukset
+- Verkkokaupan tuotelistauksiin
+- Dokumentointiin
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+Sinun tulisi kysyä itseltäsi: "Voinko esirenderöidä tämän sivun **etukäteen** ennen käyttäjän pyyntöä?" Jos vastaus on kyllä, silloin sinun kannattaa käyttää Staattista generointia.
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+Toisaalta, Staattinen Generointi **ei** ole hyvä idea, jos et pysty esirenderöimään sivua ennen käyttäjän pyyntöä. Ehkä sivusi näyttää toistuvasti päivitettävää dataa ja sivusi sisältö vaihtuu joka pyynnöllä.
 
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+Tässä tapauksessa, voit käyttää **Serveripuolen Renderöintiä**. Se on hitaampi, mutta esirenderöity sivu on aina ajan tasalla. Tai voit ohittaa esirenderöinnin ja käyttää käyttäjäpuolen JavaScriptia täyttämään datan.

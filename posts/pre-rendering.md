@@ -1,11 +1,11 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'Kaksi tapaa tehdä esirenderöinti'
+date: '2023-02-05'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Next.js pystyy esirenderöimään sivun kahdella tapaa: **Staattinen Generointi** ja **Serveripuolen renderöinti**. Erona on **milloin** se generoi HTML:n sivulle.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+- **Staattinen Generointi** on esirenderöintitapa, joka tuottaa HTML:n **buildissa**. Esirenderöityä HTML:ää käytetään _uudelleen_ jokaisella pyynnöllä.
+- **Serveripuolen renderöinti** on esirenderöintitapa, joka tuottaa HTML:n **jokaisella pyynnöllä**.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Tärkeintä kuitenkin on, että Next.js antaa sinun **valita**, mitä esirenderöintitapaa käytät milläkin sivulla. Voit tehdä "hybridi" Next.js aplikaation käyttämällä Staattista Generointia suurimpaan osaan sivuista ja muihin sivuihin Serveripuolen Renderöintiä.
