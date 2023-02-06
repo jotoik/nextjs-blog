@@ -1,5 +1,5 @@
 ---
-title: 'Miloin käyttää Staattista Generointia ja milloin Serveripuolen Renderöintiä'
+title: 'Milloin käyttää Staattista Generointia ja milloin Serveripuolen Renderöintiä'
 date: '2023-02-06'
 ---
 
