@@ -18,7 +18,7 @@ export default function Home({allPostsData}) {
   return (
     <Layout home>
       <Head>
-        <title>Joni Toikkanen Blogi</title>
+        <title>{siteTitle}</title>
          {/* Global Site Tag (gtag.js) - Google Analytics */}
          <script
             async

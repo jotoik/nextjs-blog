@@ -3,18 +3,20 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Footer from './Footer';
 
 const name = 'Joni Toikkanen';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Joni Toikkanen Blogi';
 
 export default function Layout({ children, home }) {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Tämä blogi on tehty Next.js:n avulla"
         />
         <meta
           property="og:image"
@@ -34,7 +36,7 @@ export default function Layout({ children, home }) {
               className={utilStyles.borderCircle}
               height={144}
               width={144}
-              alt=""
+              alt="profiilikuva"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -47,7 +49,7 @@ export default function Layout({ children, home }) {
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
-                alt=""
+                alt="Profiilikuva"
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
@@ -65,5 +67,7 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    <Footer/>
+    </>
   );
 }
